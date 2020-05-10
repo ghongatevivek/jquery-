@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div>
+		<form>
+			<label>User Name</label>
+			<input type="text" class="form-control" name="uname" id="uname">
+			
+			<div id="error"> </div>
+<br>
+			<input type="submit" id="btn" name="btn" class="btn btn-info">
+		</form>
+	</div>
+ 
+<script>
+	$(document).ready(function(){
+		$('#btn').click(function(){
+			
+			var user = $('#uname').val();
+
+			if(user == ""){
+				$("#error").html('**The Username Is Required**');
+				$("#error").css("color","red");
+				return false;
+			}
+
+			if((user.length <= 2 ) || (user.length >= 30) ) {
+				$("#error").html('**The Username Is Between 3 And 30 **');
+				$("#error").css("color","red");
+				return false;
+			}
+		});
+	});
+</script>
+</body>
+</html>

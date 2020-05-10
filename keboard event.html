@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<form method="post">
+		<label>Username</label>
+		<input type="text" name="">
+	</form>
+
+	<script>
+		$(document).ready(function(){
+			// $("input").keypress(function(){
+			// 	$(this).css("background-color","red");
+			// });
+
+			// $("input").keydown(function(){
+			// 	$(this).css("background-color","red");
+			// });
+
+			$("input").keyup(function(){
+				$(this).css("background-color","red");
+			});
+		});
+	</script>
+</body>
+</html>

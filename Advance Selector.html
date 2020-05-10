@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<ol type="ccnbc" style="list-style: none;">
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+	</ol>
+
+
+	<ol type="ccnbc" id="vivek" style="list-style: none;">
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+		<li>hjdgdzhcbzcnzcb</li>
+	</ol>
+
+	<button id="btn">Click Me </button>
+
+	<script>
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				// $("*").css("background-color","red");
+				// $(this).css("color","gold");
+				// $("[type]").hide("slow");
+				// $("li:odd").css("color","gold");
+				// $("li:first-child").css("color","green");
+				// $("#vivek li:last-child").css("color","gold");
+				$("#vivek li:nth-child(2)").css("color","yellow");
+			});
+			
+		});
+	</script>
+	
+</body>
+</html>

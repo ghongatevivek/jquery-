@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<style>
+	#first{
+		height: 200px;
+		width: 100px;
+		background-color: red;
+	}
+	#secound{
+		height: 200px;
+		width: 100px;
+		background-color: green;
+	}
+	#third{
+		height: 200px;
+		width: 100px;
+		background-color: yellow;
+	}
+</style>
+<body>
+
+	<div>
+		<!-- <button id="fadeout1">Fade Out</button>
+		<button class="fadein">Fade In</button> -->
+		<button id="btn">Click Me</button>
+		<hr>
+
+		<div id="first"></div><br>
+		<div id="secound"></div><br>
+		<div id="third"></div>
+	</div>
+
+	<script>
+		// $(document).ready(function(){
+		// 	$("#fadeout1").click(function(){
+		// 		$("#first").fadeOut();
+		// 		$("#secound").fadeOut("slow");
+		// 		$("#third").fadeOut(2000);
+		// 	});
+
+		// 	$(".fadein").click(function(){
+		// 		$("#first").fadeIn();
+		// 		$("#secound").fadeIn("slow");
+		// 		$("#third").fadeIn(2000);
+		// 	});
+		// });
+
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$("#first").fadeToggle();
+				$("#secound").fadeToggle("slow");
+				$("#third").fadeToggle(2000);
+			});
+		});
+	</script>
+</body>
+</html>

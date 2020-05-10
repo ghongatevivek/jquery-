@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<style>
+	.main{
+		height: 98px;
+		width: 98px;
+		position: relative;
+		background-color: red;
+		border: 2px solid black;
+	}
+</style>
+<body>
+
+	<button class="btn">CLick For Magic</button>
+	<div class="main"></div>
+
+	<script>
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$(".main").animate({
+					left:500,
+					height:98/2,
+					width:98/2
+				});
+
+				$(".main").animate({
+					top:300
+				});
+
+				$(".main").animate({
+					top:300,
+					left:0
+				});
+
+				$(".main").animate({
+					top:0,
+					left:0,
+					height:98,
+					width:98
+				});
+			})
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<input type="text" name="" id="textbox">
+	<span id="focus">Hello</span>
+	<span id="blur">Welcome</span>
+	<script>
+		$(document).ready(function(){
+			$("span").css("display","none");
+
+			$("#textbox").focus(function(){
+				$("#focus").css("display","inline").fadeOut(5000);
+				// or
+				// $("#focus").show();
+			});
+
+			$("#textbox").blur(function(){
+				$("#blur").css("display","inline").fadeOut(5000);
+				// or
+				// $("#focus").show();
+			});
+		});
+	</script>
+</body>
+</html>
